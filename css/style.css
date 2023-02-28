@@ -54,4 +54,26 @@
     opacity:1;
 }
 
-#dots-container{}
+
+
+#dots-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#dots-container .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.5;
+    border: solid 1px white;
+    margin-right: 10px;
+}
