@@ -74,6 +74,11 @@
     height: 10px;
     border-radius: 50%;
     opacity: 0.5;
+    background-color: white;
     border: solid 1px white;
     margin-right: 10px;
+}
+
+#dots-container .dot.active{
+    opacity: 1;
 }

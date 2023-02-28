@@ -47,7 +47,17 @@ const downArrowEl = document.getElementById("down-arrow");
 const activeImgEl = document.getElementById("my-img");
 const dotsContainerEl = document.getElementById("dots-container");
 
+for (let i=0; i<imgs.length; i++){
+    let newDot = document.createElement("div");
+    newDot.classList.add("dot");
+    dotsContainerEl.append(newDot);
+}
+
+
 let indice = 4;
+
+const dotsEl = document.querySelectorAll(".dot");
+dotsEl[indice].classList.add("active");
 
 activeImgEl.src = imgs[indice];
 
