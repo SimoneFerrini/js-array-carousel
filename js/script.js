@@ -64,20 +64,26 @@ activeImgEl.src = imgs[indice];
 upArrowEl.addEventListener("click", function() {
         if ((indice - 1) < 0) {
             indice = imgs.length - 1;
+            dotsEl[0].classList.remove("active");
         } else {
             indice--;
+            dotsEl[indice+1].classList.remove("active");
         }
         activeImgEl.src = imgs[indice];
+        dotsEl[indice].classList.add("active");
         console.log(indice)
     })
 
 downArrowEl.addEventListener("click", function() {
         if ((indice + 1) == imgs.length) {
             indice = 0;
+            dotsEl[imgs.length - 1].classList.remove("active");
         } else {
             indice++;
+            dotsEl[indice-1].classList.remove("active");
         }
         activeImgEl.src = imgs[indice];
+        dotsEl[indice].classList.add("active");
         console.log(indice)
     })
 
