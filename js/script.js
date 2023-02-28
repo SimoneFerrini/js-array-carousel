@@ -20,4 +20,38 @@ Consigli del giorno:
 2. Scriviamo sempre prima per punti il nostro algoritmo in italiano per capire cosa vogliamo fare
 3. Al momento giusto (ihihhi starà a voi capire quale) rispondete a questa domanda: "Quanti cicli servono?"
 
+
+-preparare array imgs
+-" array elem html
+- memorizzare un indice
+-pulsante up
+    -indice--
+    -aggiornare img
+    -aggiornare template
+- pulsante down
+    -indice ++
+    -aggiornare img
+    -aggiornare template
 */
+
+
+
+
+
+const imgs = ["img/01.webp", "img/02.webp",
+              "img/03.webp", "img/04.webp",
+              "img/05.webp"];
+            
+const upArrowEL = document.getElementById("up-arrow");
+const downArrowEL = document.getElementById("down-arrow");
+const activeImgEl = document.getElementById("active-img");
+const dotsContainerEl = document.getElementById("dots-container");
+
+let indice = 0;
+
+
+
+
+
+
+
