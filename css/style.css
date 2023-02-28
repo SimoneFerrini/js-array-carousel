@@ -28,8 +28,12 @@
     top: 0;
     left: 50%;
     font-size: 2em;
-    color: grey;
+    color: white;
     margin-top: 0.5em;
+
+    background-color: grey;
+    opacity: 0.5;
+    border-radius: 30%;
 }
 
 #down-arrow{
@@ -37,8 +41,17 @@
     bottom: 0;
     left: 50%;
     font-size: 2em;
-    color: grey;
+    color: white;
     margin-bottom: 0.5em;
+
+    background-color: grey;
+    opacity: 0.5;
+    border-radius: 30%;
+}
+
+#down-arrow:hover,
+#up-arrow:hover{
+    opacity:1;
 }
 
 #dots-container{}

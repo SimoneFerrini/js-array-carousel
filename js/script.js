@@ -42,12 +42,34 @@ const imgs = ["img/01.webp", "img/02.webp",
               "img/03.webp", "img/04.webp",
               "img/05.webp"];
             
-const upArrowEL = document.getElementById("up-arrow");
-const downArrowEL = document.getElementById("down-arrow");
-const activeImgEl = document.getElementById("active-img");
+const upArrowEl = document.getElementById("up-arrow");
+const downArrowEl = document.getElementById("down-arrow");
+const activeImgEl = document.getElementById("my-img");
 const dotsContainerEl = document.getElementById("dots-container");
 
-let indice = 0;
+let indice = 4;
+
+activeImgEl.src = imgs[indice];
+
+upArrowEl.addEventListener("click", function() {
+        if ((indice - 1) < 0) {
+            indice = imgs.length - 1;
+        } else {
+            indice--;
+        }
+        activeImgEl.src = imgs[indice];
+        console.log(indice)
+    })
+
+downArrowEl.addEventListener("click", function() {
+        if ((indice + 1) == imgs.length) {
+            indice = 0;
+        } else {
+            indice++;
+        }
+        activeImgEl.src = imgs[indice];
+        console.log(indice)
+    })
 
 
 
